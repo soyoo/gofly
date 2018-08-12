@@ -1,2 +1,2 @@
 # gocheck
-bcc and other verification algorithm implementation.
+BCC, CS verification algorithm implementation.
