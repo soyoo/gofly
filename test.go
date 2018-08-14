@@ -29,7 +29,21 @@ func cs_test() {
 	}
 }
 
+func lrc_test() {
+	b := []byte{0x01, 0xA0, 0x7C, 0xFF, 0x02}
+
+	var lrc uint8
+	lrc = check.Lrc(b)
+	fmt.Printf("lrc, %x\n", lrc)
+	if lrc == 0xe2 {
+		fmt.Println("lrc test pass.")
+	} else {
+		fmt.Println("lrc test fail.")
+	}
+}
+
 func main() {
 	bcc_test()
 	cs_test()
+	lrc_test()
 }
