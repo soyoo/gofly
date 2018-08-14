@@ -8,7 +8,12 @@ func bcc_test() {
 
 	var bcc uint8
 	bcc = check.Bcc(b)
-	fmt.Printf("bcc, %x\n", bcc)
+	// fmt.Printf("bcc, %x\n", bcc)
+	if bcc == 0x20 {
+		fmt.Println("bcc test pass.")
+	} else {
+		fmt.Println("bcc test fail.")
+	}
 }
 
 func cs_test() {
@@ -16,7 +21,12 @@ func cs_test() {
 
 	var cs uint8
 	cs = check.Cs(b)
-	fmt.Printf("cs, %x\n", cs)
+	// fmt.Printf("cs, %x\n", cs)
+	if cs == 0x1e {
+		fmt.Println("cs test pass.")
+	} else {
+		fmt.Println("cs test fail.")
+	}
 }
 
 func main() {
