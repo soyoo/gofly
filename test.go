@@ -34,7 +34,7 @@ func lrc_test() {
 
 	var lrc uint8
 	lrc = check.Lrc(b)
-	fmt.Printf("lrc, %x\n", lrc)
+	// fmt.Printf("lrc, %x\n", lrc)
 	if lrc == 0xe2 {
 		fmt.Println("lrc test pass.")
 	} else {
